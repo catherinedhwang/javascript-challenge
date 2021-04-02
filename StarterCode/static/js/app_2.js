@@ -1,4 +1,3 @@
-// LEVEL 1
 // // from data.js
 var tableData = data;
 // console.log(data);
@@ -38,15 +37,39 @@ button.on("click", function() {
 
     tbody.html("");
 
-    // Select the input date get the raw HTML node
-    var inputElement = d3.select("#datetime");
-    // Get the value property of the input element
-    var inputValue = inputElement.property("value");
+    // Select the input data to get the raw HTML node for datetime, city, state, country, and shape. (LEVEL 2 INCLUDED)
+    var inputDate = d3.select("#datetime");
+    var inputCity = d3.select("#city");
+    var inputState = d3.select("#state");
+    var inputCountry = d3.select("#country");
+    var inputShape = d3.select("#shape");
 
-    console.log(inputValue);
+    // Get the value property of the input elements defined above. 
+    var dateValue = inputDate.property("value");
+    var cityValue = inputCity.property("value");
+    var stateValue = inputState.property("value");
+    var countryValue = inputCountry.property("value");
+    var shapeValue = inputShape.property("value");
+    
+    var filteredData = tableData;
 
-    var filteredData = tableData.filter(sighting => sighting.datetime === inputValue);
-
+    if (dateValue) {
+        filteredData = filteredData.filter(sighting => sighting.datetime === dateValue);
+    }
+    if (cityValue) {
+        filteredData = filteredData.filter(sighting => sighting.city === cityValue);
+    }
+    if (stateValue) {
+        filteredData = filteredData.filter(sighting => sighting.state === stateValue);
+    }
+    if (countryValue) {
+        filteredData = filteredData.filter(sighting => sighting.country === countryValue);
+    }
+    if (shapeValue) {
+        filteredData = filteredData.filter(sighting => sighting.shape === shapeValue);
+    }
+   
+    
     console.log(filteredData);
 
     filteredData.forEach(function(filters) {
