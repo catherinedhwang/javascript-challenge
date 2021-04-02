@@ -2,15 +2,7 @@
 
 ## Background
 
-WAKE UP SHEEPLE! The extra-terrestrial menace has come to Earth and we here at `ALIENS-R-REAL` have collected all of the eye-witness reports we could to prove it! All we need to do now is put this information online for the world to see and then the matter will finally be put to rest.
-
-There is just one tiny problem though... our collection is too large to search through manually. Even our most dedicated followers are complaining that they are having trouble locating specific reports in this mess.
-
-That's why we are hiring you. We need you to write code that will create a table dynamically based upon a [dataset we provide](StarterCode/static/js/data.js). We also need to allow our users to filter the table data for specific values. There's a catch though... we only use pure JavaScript, HTML, and CSS, and D3.js on our web pages. They are the only coding languages which can be trusted.
-
-You can handle this... right? The planet Earth needs to know what we have found!
-
-## Your Task
+A collection of data is often too large to search through manually. With that being said, being able to filter data based on user input is not only time efficient but necessary in most cases. In this assignment, we were given a dataset of UFo sightings. Our objective was to create a table and have filters based on specific values. The only coding languages used were JavaScript, HTML, CSS, and D3.js on the web page.
 
 ### Level 1: Automatic Table and Date Search (Mandatory
 
