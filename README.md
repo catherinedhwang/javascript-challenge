@@ -4,7 +4,7 @@
 
 A collection of data is often too large to search through manually. With that being said, being able to filter data based on user input is not only time efficient but necessary in most cases. In this assignment, we were given a dataset of UFo sightings. Our objective was to create a table and have filters based on specific values. The only coding languages used were JavaScript, HTML, CSS, and D3.js on the web page.
 
-### Level 1: Automatic Table and Date Search (Mandatory
+### Level 1: Automatic Table and Date Search (Mandatory)
 
 * Here, we created our own custom page utilizing basic HTML concepts combined with CSS. 
 
@@ -31,3 +31,5 @@ A collection of data is often too large to search through manually. With that be
 
 * [UFO Sightings Data](StarterCode/static/js/data.js)
 
+### Preview of web page: 
+<img width="798" alt="snipit" src="https://user-images.githubusercontent.com/75541219/113449844-b2f5d980-93cc-11eb-96c2-168db871790d.PNG">
